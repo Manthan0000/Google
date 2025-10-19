@@ -81,7 +81,7 @@ function App() {
                 className="survey-button"
                 onClick={handleSurveyClick}
               >
-                <span className="button-text">Form Bhar Do Bhai! 📝</span>
+                <span className="button-text">Form Bhar De Bhai! 📝</span>
                 <span className="button-emoji">👉</span>
               </button>
             </div>

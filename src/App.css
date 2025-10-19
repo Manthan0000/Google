@@ -124,24 +124,28 @@ body {
   background: linear-gradient(45deg, #ff6b6b, #ee5a24);
   color: white;
   border: none;
-  padding: 1.2rem 2.5rem;
-  font-size: 1.3rem;
-  font-weight: 700;
+  padding: 1.8rem 3.5rem;
+  font-size: 1.6rem;
+  font-weight: 800;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin: 2rem auto;
-  box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+  justify-content: center;
+  gap: 1.2rem;
+  margin: 3rem auto;
+  box-shadow: 0 15px 40px rgba(255, 107, 107, 0.4);
   position: relative;
   overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
 }
 
 .survey-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(255, 107, 107, 0.4);
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 20px 50px rgba(255, 107, 107, 0.5);
 }
 
 .survey-button:active {
@@ -168,7 +172,10 @@ body {
 
 .highlight {
   color: #d63031;
-  font-weight: 700;
+  font-weight: 800;
+  font-size: 1.4rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  animation: pulse 2s infinite;
 }
 
 .signature {
@@ -290,6 +297,18 @@ body {
   }
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 @media (max-width: 768px) {
   .title {
     font-size: 2rem;
@@ -312,5 +331,8 @@ body {
   .survey-button {
     flex-direction: column;
     gap: 0.5rem;
+    padding: 1.5rem 2rem;
+    font-size: 1.4rem;
+    max-width: 350px;
   }
 }
